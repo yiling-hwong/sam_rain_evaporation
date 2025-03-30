@@ -1,0 +1,71 @@
+&SGS_TKE
+dosmagor = .true.
+/
+
+&MICRO_M2005
+/
+
+&PARAMETERS
+
+caseid ='SAM6108_L128_ALPHA0', 
+
+nrestart = 0,
+nrestart_skip = 0, !write restarts every 12 stat outputs (except at the end of the run when restarts are written regardless of nrestart_skip).
+
+CEM = .true.,
+OCEAN = .true.,
+dosgs           = .true.,
+dodamping       = .true.,
+doupperbound    = .true.,
+docloud         = .true.,
+doprecip        = .true.,
+dolongwave      = .true.,
+doshortwave     = .true.,
+dosurface       = .true., !compute surface fluxes interactively
+dosfchomo       = .true., !homogenise surface fluxes
+dolargescale    = .false.,
+doradforcing    = .false., 
+doradhomo       = .true., !homogenise radiation
+dosfcforcing    = .true.,  !keep forcing the SST=301K
+donudging_uv    = .true.,
+donudging_tq    = .false.,
+docoriolis      = .false.,
+dofplane        = .false.,
+dowally         = .false.,
+doperpetual     = .true.,
+save2Davg       = .true.,
+
+tauls = 10800., !3 hours
+
+SFC_FLX_FXD    = .false.,
+SFC_TAU_FXD    = .false.,
+
+dx =    1000.,
+dy =    1000.,
+dt =    10.,
+
+
+latitude0 = 0.,
+longitude0 = 0.,
+nrad = 15, !frequency (in time step) of radiation computation (3-5 min should be ok)
+day0=0.0,
+
+nstop    = 345600, !40 days
+nprint   = 1080,
+nstat    = 1080,
+nstatfrq = 54,
+
+doSAMconditionals     = .true.
+dosatupdnconditionals = .true.
+
+nsave2D         = 1080,
+nsave2Dstart    = 0,
+nsave2Dend      = 99999999,
+
+nsave3D         = 8640,
+nsave3Dstart    = 0, 
+nsave3Dend      = 99999999,
+
+/
+
+
