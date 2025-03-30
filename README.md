@@ -2,7 +2,8 @@
 
 This repository contains the data, scripts, SAM codes and files required to reproduce the results of the manuscript "The Unreasonable Efficiency of Total Rain Evaporation Removal in Triggering Convective Self-Aggregation" published in the Geophysical Research Letters (GRL).
 
-The published manuscript is here: https://doi.org/10.1029/2023GL106523
+**The published manuscript about this work should be cited as:**  
+Hwong, Y. L., & Muller, C. J. (2024). The unreasonable efficiency of total rain evaporation removal in triggering convective self‐aggregation. Geophysical Research Letters, 51(6), e2023GL106523m https://doi.org/10.1029/2023GL106523
 
 ## Brief description of project
 
